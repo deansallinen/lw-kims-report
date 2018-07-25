@@ -46,7 +46,7 @@ SELECT
     -- COUNT(fin_total.total_after_discount),
     -- fin.total_price_without_sales_tax,
     fin.sales_tax,
-    fin.total_price AS total_revenue
+    fin.total_price AS invoice_total
     
 FROM st_biz_managed_resource AS main
 	LEFT JOIN st_prj_project_element AS project_element ON (project_element.person_responsible_id = main.id)
